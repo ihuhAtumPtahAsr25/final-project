@@ -1,0 +1,441 @@
+/* ------------------------------
+   GLOBAL RESET + BASE STYLES
+--------------------------------*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: #ffffff;
+  color: #1a1a1a;
+  line-height: 1.6;
+  padding: 0 20px;
+}
+
+section {
+  width: 100%;
+  max-width: 1200px;
+  margin: 60px auto;
+}
+
+/* ------------------------------
+   HERO SECTION
+--------------------------------*/
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.hero-content {
+  flex: 1;
+}
+
+.hero-content h1 {
+  font-size: 48px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.hero-content p {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.hero-content button {
+  padding: 12px 24px;
+  background: #4f46e5;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.hero-image img {
+  width: 100%;
+  max-width: 500px;
+  display: block;
+}
+
+/* ------------------------------
+   TRUSTED BY
+--------------------------------*/
+.trusted-by {
+  text-align: center;
+}
+
+.trusted-by h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.trusted-by .logos {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.trusted-by img {
+  width: 120px;
+  opacity: 0.8;
+}
+
+/* ------------------------------
+   FEATURES
+--------------------------------*/
+.features {
+  text-align: center;
+}
+
+.features h2 {
+  font-size: 32px;
+  margin-bottom: 40px;
+}
+
+.feature {
+  margin-bottom: 40px;
+}
+
+.feature img {
+  width: 80px;
+  margin-bottom: 10px;
+}
+
+.feature h3 {
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+/* ------------------------------
+   QUALITY WORK
+--------------------------------*/
+.quality-work {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.quality-work .text {
+  flex: 1;
+}
+
+.quality-work .image img {
+  width: 100%;
+  max-width: 500px;
+}
+
+/* ------------------------------
+   VALUES
+--------------------------------*/
+.values {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.values .text {
+  flex: 1;
+}
+
+.values .image img {
+  width: 100%;
+  max-width: 500px;
+}
+
+/* ------------------------------
+   PRICING
+--------------------------------*/
+.pricing {
+  text-align: center;
+}
+
+.pricing h2 {
+  font-size: 32px;
+  margin-bottom: 40px;
+}
+
+.plan {
+  margin-bottom: 40px;
+}
+
+.plan img {
+  width: 100px;
+  margin-bottom: 10px;
+}
+
+.plan h3 {
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+/* ------------------------------
+   TESTIMONIALS
+--------------------------------*/
+.testimonials {
+  text-align: center;
+}
+
+.testimonials h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+/* ------------------------------
+   CTA
+--------------------------------*/
+.cta {
+  text-align: center;
+  padding: 40px;
+  background: #4f46e5;
+  color: white;
+  border-radius: 10px;
+}
+
+.cta button {
+  margin-top: 20px;
+  padding: 12px 24px;
+  background: white;
+  color: #4f46e5;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+/* ------------------------------
+   FOOTER
+--------------------------------*/
+.footer {
+  text-align: center;
+  padding: 40px 0;
+  border-top: 1px solid #ddd;
+}
+
+.footer img {
+  width: 120px;
+  margin-bottom: 10px;
+}
+
+/* Hero section layout */
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #f9fafb;
+  font-family: 'Inter', sans-serif;
+}
+
+/* Hero image styling */
+img {
+  width: 400px;
+  height: auto;
+  margin-left: 40px;
+}
+
+/* Headings and text */
+h1 {
+  font-size: 2.5rem;
+  color: #111827;
+}
+
+p {
+  color: #374151;
+  font-size: 1.1rem;
+}
+
+/* HERO LAYOUT */
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 60px 20px;
+}
+
+/* TEXT COLUMN */
+.hero-text {
+  max-width: 500px;
+}
+
+.hero-text h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #1f2937;
+  margin-bottom: 20px;
+}
+
+.hero-text p {
+  font-size: 1.2rem;
+  color: #4b5563;
+  margin-bottom: 30px;
+}
+
+
+/* BUTTON */
+.cta {
+  background-color: #6415ff;
+  color: white;
+  padding: 14px 32px;
+  border-radius: 9999px;
+  border: none;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.cta:hover {
+  background-color: #4b11cc;
+}
+
+/* IMAGE COLUMN */
+.hero-image img {
+  width: 500px;
+  height: auto;
+}
+
+
+@media (max-width: 900px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-image img {
+    width: 350px;
+    margin-top: 40px;
+  }
+}
+
+/* ============================
+   HERO SECTION — 1:1 SPACING
+   ============================ */
+
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  /* EXACT sample spacing */
+  padding: 96px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+
+  gap: 48px; /* spacing between text + image */
+}
+
+/* TEXT COLUMN */
+.hero-text {
+  max-width: 500px;
+}
+
+.hero-text h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #1f2937;
+  margin-bottom: 24px; /* exact */
+}
+
+.hero-text p {
+  font-size: 1.2rem;
+  color: #4b5563;
+  margin-bottom: 32px; /* exact */
+}
+
+/* BUTTON */
+.cta {
+  background-color: #6415ff;
+  color: white;
+  padding: 14px 32px;
+  border-radius: 9999px;
+  border: none;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.cta:hover {
+  background-color: #4b11cc;
+}
+
+/* IMAGE COLUMN */
+.hero-image img {
+  width: 500px; /* exact desktop size */
+  height: auto;
+}
+
+/* ============================
+   MOBILE — 1:1 BEHAVIOR
+   ============================ */
+@media (max-width: 900px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+    gap: 40px;
+  }
+
+  .hero-image img {
+    width: 350px; /* exact mobile size */
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 900px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-image img {
+    width: 350px;
+    margin-top: 40px;
+  }
+}
+
+@media (max-width: 900px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-image img {
+    width: 350px;
+    margin-top: 40px;
+  }
+}
+
+/* ============================
+   HERO TYPOGRAPHY — 1:1 MATCH
+   ============================ */
+
+.hero-text h1 {
+  font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  font-size: 48px;          /* exact */
+  font-weight: 700;         /* exact */
+  line-height: 1.25;        /* exact */
+  letter-spacing: -0.025em; /* exact */
+  color: #1f2937;
+  margin-bottom: 24px;
+}
+
+.hero-text p {
+  font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  font-size: 18px;          /* exact */
+  font-weight: 400;         /* exact */
+  line-height: 1.625;       /* exact */
+  color: #4b5563;
+  margin-bottom: 32px;
+}
+
+.cta {
+  font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  font-size: 16px;          /* exact */
+  font-weight: 600;         /* exact */
+  letter-spacing: 0.025em;  /* exact */
+}
+
